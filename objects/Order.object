@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>MaxOrderLine__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>MaxOrderLine</label>
+        <referenceTo>MaxOrderLine__c</referenceTo>
+        <relationshipLabel>Orders</relationshipLabel>
+        <relationshipName>Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RelatedOrderActivationBlock__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Related Order Activation Block</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ValidateStartEndDateonOnItems__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NonInventoryItemNoEndDate__c + NonInventoryItemNoStartDate__c &gt; 0 ,1,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ValidateStartEndDateonOnItems</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ValidationErrorsOrder__c</fullName>
+        <externalId>false</externalId>
+        <formula>ValidateActivateAccountSubsidiaryRequir__c +
+ValidateActivateEmailsRequired__c +
+ValidateActivateShippingAddressRequired__c +
+ValidateActivateValidation__c +
+ValidateB2BLineCountError__c +
+ValidateDigitalforNetherlands__c+
+ValidateInventoryOnMultipleLocations__c +
+ValidateReferenceNumberCheck__c +
+ValidateShipToEmpty__c +
+ValidateBillToEmpty__c +
+ValidateNetSalesPrice__c+
+ValidateStartEndDateonOnItems__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Validation errors Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>CantActivateOrderwithRelatedOrders</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(Text(Status)=&apos;Activated&apos;,RelatedOrderActivationBlock__c = true)</errorConditionFormula>
+        <errorMessage>Cant Activate Order with Related Orders</errorMessage>
+    </validationRules>
+</CustomObject>
