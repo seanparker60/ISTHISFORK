@@ -1,0 +1,80 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 3,
+    "passing": 3,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Wed Jun 01 2022 16:25:49",
+    "testExecutionTimeInMs": 57133,
+    "testTotalTimeInMs": 57133,
+    "commandTimeInMs": 368,
+    "hostname": "https://infinitaslearning--devcentral.my.salesforce.com",
+    "orgId": "00D3N0000008kLoUAI",
+    "username": "sparker@il.infinitaslearning.com.devcentral",
+    "testRunId": "7073N00001rBlks",
+    "userId": "0053V000001EnA3QAK"
+  },
+  "tests": [
+    {
+      "id": "07M3N00000BdaSIUAZ",
+      "queueItemId": "7093N000001JP0gQAG",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073N00001rBlksQAC",
+      "methodName": "AssetsCreateOnOrderActivation1",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3N000006PDQjQAO",
+        "name": "Order_AssetsCreateOnOrderActivation_test",
+        "namespacePrefix": null,
+        "fullName": "Order_AssetsCreateOnOrderActivation_test"
+      },
+      "runTime": 41948,
+      "testTimestamp": "2022-06-01T14:25:51.000+0000",
+      "fullName": "Order_AssetsCreateOnOrderActivation_test.AssetsCreateOnOrderActivation1"
+    },
+    {
+      "id": "07M3N00000BdaSJUAZ",
+      "queueItemId": "7093N000001JP0gQAG",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073N00001rBlksQAC",
+      "methodName": "AssetsCreateOnOrderActivation2",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3N000006PDQjQAO",
+        "name": "Order_AssetsCreateOnOrderActivation_test",
+        "namespacePrefix": null,
+        "fullName": "Order_AssetsCreateOnOrderActivation_test"
+      },
+      "runTime": 7956,
+      "testTimestamp": "2022-06-01T14:28:27.000+0000",
+      "fullName": "Order_AssetsCreateOnOrderActivation_test.AssetsCreateOnOrderActivation2"
+    },
+    {
+      "id": "07M3N00000BdaSKUAZ",
+      "queueItemId": "7093N000001JP0gQAG",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7073N00001rBlksQAC",
+      "methodName": "AssetsCreateOnOrderActivation3",
+      "outcome": "Pass",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p3N000006PDQjQAO",
+        "name": "Order_AssetsCreateOnOrderActivation_test",
+        "namespacePrefix": null,
+        "fullName": "Order_AssetsCreateOnOrderActivation_test"
+      },
+      "runTime": 7229,
+      "testTimestamp": "2022-06-01T14:28:38.000+0000",
+      "fullName": "Order_AssetsCreateOnOrderActivation_test.AssetsCreateOnOrderActivation3"
+    }
+  ]
+}
